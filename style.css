@@ -1,3 +1,9 @@
+/* Colors */
+:root{
+    --main-color:rgb(164, 126, 200);
+    
+}
+
 /* body */
 * {
     margin: 0;
@@ -10,56 +16,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.card-overlay {
-    position: fixed;
-    border: 5px solid black;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: end;
-    align-items: baseline;
-}
-  
-.card {
-    border: 1px solid black;
-    color: white;
-    padding: 20px;
-    width: 50%;
-    border-radius: 5px;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    box-shadow: 5px 4px 4px black;
-}
-
-.close-button {
-    display: flex;
-    justify-content: right;
-
-}
-.card-items{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-}
-
-.card-items a{
-    color: white;
-    font-size: large;
-    text-decoration: none;
-    margin: 5% 4%;
-    transition: 0.3s;
-}
-.card-items hr{
-    opacity: 0.2;
-}
-.card-items a:hover{
-    transform: scale(1.1);
-    color: rgb(164, 86, 237);
-}
 
 /* ------------ Navbar ------------ */
 nav {
@@ -89,8 +45,7 @@ nav {
 .navel {
     width: 60%;
 }
-
-.navel ul {
+#navul{
     display: flex;
     justify-content: center;
 }
@@ -113,72 +68,69 @@ nav {
 }
 
 .navli a:hover {
-    color: rgb(174, 104, 240);
+    color: var(--main-color);
 }
 
 /* --Min-size Nav ui-- */
-#nav-button{
+#navbtn1{
+    display: none;
+    cursor: pointer;
+}
+#navbtn2{
     display: none;
     cursor: pointer;
 }
 
 /* ----------- main section 1 ----------- */
-.section1 {
+#section1 {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding-top: 7%;
-    padding-bottom: 4%;
+    height: 95vh;
+    background-image: url('Images/nature12.jpg');
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
 }
-
-.left1 {
+.center1 {
     font-size: 3em;
-    margin: 2%;
-    width: 40%;
+    width: 60%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .btns{
-    width: 80%;
+    width: 100%;
     height: 20%;
-    margin-left: 10%;
-}
-.btns a{
-    text-decoration: none;
+    display: block;
 }
 .btn0{
-    width: 45%;
-    height: 50%;
-    padding: 3% 2%;
+    width: 30%;
+    height: 7vh;
+    font-size: medium;
     border-radius: 6px;
-    font-size: 0.8rem;
     white-space: nowrap;
     cursor: pointer;
+    transition: 0.4s;
 }
 .btn1{
     border: 2px solid white;
-    background-color: black;
+    background-color: rgb(14, 13, 13);
     color: white;
 }
 .btn2{
     border: 0px;
     background-color: lavender;
     font-weight: bold;
-    color: rgb(40, 22, 56);
+    color: black;
 }
-.section1 img {
-    width: 80%;
+.btn0:hover{
+    transform: scale(1.03);
 }
+
 
 #element {
     color: rgb(158, 76, 236);
-}
-
-.right1{
-    display: flex;
-    justify-content: center;
-    width: 50%;
 }
 
 main hr{
@@ -192,12 +144,12 @@ main hr{
 /* ------------------ section 2 -------------- */
 .heading {
     font-size: 4em;
-    color: rgb(164, 126, 200);
+    color: var(--main-color);
     text-align: center;
     margin-top: 7vh;
 }
 
-.section2 {
+#section2 {
     padding: 4% 0;
     display: flex;
     justify-content: center;
@@ -214,6 +166,7 @@ main hr{
     max-width: 60%;
     object-fit: cover;
     border-radius: 15px;
+
 }
 
 .right2 {
@@ -290,9 +243,9 @@ main hr{
 }
 
 /* ----------- Section 3 ----------- */
-.section3 {
+#section3 {
     margin-top: 3%;
-    margin-bottom: 7%;
+    margin-bottom: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +274,126 @@ main hr{
     margin: 5% 5%;
 }
 
+/* ----------- Section-4 ----------- */
+.projects{
+    width: 25vw;
+    height: 50vh;
+    position: relative;
+    margin: 8% 0 10% 0;
+}
+.projects img{
+    width: 100%;    
+    height: 100%;
+    filter: grayscale(30%);
+}
+.content{
+    width: 60%;
+    height: 40%;
+    display: none;
+    color: black;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.2);;
+    /* transition: 1.4s; */
+}
+.content a{
+    display: flex;
+    justify-content: center;
+    
+}
+.projects:hover .content{
+    display: block;
+}
+#clickbtn{
+    width: 10vw;
+    height: 10vh;
+}
+#vehicle{
+}
+#Classification{
+}
+#clone{
+}
+.clickbtn{
+}
+.projects:hover .clickbtn{
+    display: block;
+}
 
+/* ------------ Section-5 ---------- */
+
+#section5{
+    margin-top: 3%;
+    display: flex;
+}
+#section5 > div{
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left5{
+    /* border: 1px solid red; */
+    width: 80%;
+}
+.right5{
+    width: 100%;
+    height: auto;
+    display: grid;
+    flex-direction: column;
+}
+.right5 input{
+    margin-top: 4%;
+    width: 80%;
+    height: 5vh;
+    justify-self: center;   
+    background-color: #a9a7a7;
+    color: black;
+    cursor: pointer;
+    font-size: medium;
+    /* outline-style: none; */
+    outline-color: rgb(164, 86, 237);
+}
+.right5 input::placeholder{
+    color: black; 
+}
+.right5 textarea{
+    margin-top: 4%;
+    width: 80%;
+    height: 10vh;
+    resize: none;
+    justify-self: center;
+    font-size: large;
+    background-color: #a9a7a7;
+    outline-color: rgb(164, 86, 237);
+    cursor: pointer;
+}
+.right5 textarea::placeholder{
+    color: black; 
+}
+.right5 button{
+    width: 25%;
+    height: 5vh;
+    margin-top: 4%;
+    justify-self: center;
+    font-size: large;
+    color: white;
+    background-color: black;
+    border-color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.right5 button:hover{
+    transform: scale(1.03);
+    border-color: rgb(164, 86, 237);
+}
+#msg{
+    text-align: center;
+    color: rgb(164, 86, 237);
+}
 /* ------------ footer ----------- */
 footer {
     margin-top: 4%;
@@ -334,9 +406,8 @@ footer {
     white-space: nowrap;
     color: rgb(189, 150, 226);
 }
-.f-tabs div {
+.f-tabs {
     margin-top: 16px;
-
 }
 
 .f-text {
@@ -350,22 +421,35 @@ footer {
 .f-text a:hover{
     text-decoration: underline;
 }
+.centertab{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.f-tabs0{
+    white-space: nowrap;
+    margin-top: 16px;
+}
 .f-tabs1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 16px;
     white-space: nowrap;
 }
-.f-tabs3 div{
+.f-tabs2{
     white-space: nowrap;
 }
-.f-tabs3 div a{
+.f-tabs1 a{
     text-decoration: none;
     color: white;
-    margin-right: 4%;
+    margin-right: 8px;
     font-size: 0.93em;
 }
-.f-tabs3 div a:hover{
+.f-tabs1 a:hover{
     text-decoration: underline;
 }
-.f-tabs3 div a i{
+.f-tabs1 a i{
     margin-right: 2%;
 }
 
@@ -393,8 +477,8 @@ footer {
     .tabhead{
         font-size: 2.7vw;
     }
-    .namer{
-        font-size: xx-large;
+    .center1{
+        width: 80%;
     }
 }
 @media (max-width: 824px) {
@@ -411,25 +495,51 @@ footer {
         font-size: 4vw;
     }
     .navel{
-        width: 17%;
+        width: 100%;
+        /* height: 100%; */
         display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
         justify-content: right;
-    }
-    .navel ul{
+        align-items: baseline;
+    } 
+    #navul {
+        width: 30%;
+        height: 100vh;
         display: none;
+        flex-direction: column;
+        justify-content: right;
+        background-color: #1A1A2E;
+        box-shadow: -4px 0 4px -2px rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
     }
-    #nav-button{
+    #navul2{
+        width: 10%;
+        height: 8vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbtn1{
+        margin: 13px 2px;
+    }
+    .navli{
+        width: 25%;
+        margin: 19px;
+    }
+    #navbtn2{
         display: block;
     }
-    .section1{
+    #section1{
         padding: 0;
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .section1 img{
+    #section1 img{
         width: 90%;
     }
-    .left1{
+    .center1{
         width: 80%;
     }
     .btn0{
@@ -440,7 +550,7 @@ footer {
         width: 80%;
         margin-top: 4%;
     }
-    .section2{
+    #section2{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -458,7 +568,7 @@ footer {
     .tab-card{
         font-size: 3vw;
     }
-    .section3{
+    #section3{
         flex-direction: column;
     }
     .cards{
@@ -471,6 +581,17 @@ footer {
     }
     .card-content{
         font-size: 3vw;
+    }
+    .projects{
+        width: 50vw;
+        height: 60vh;
+    }
+    #section5{
+        flex-direction: column;
+        align-items: center;
+    }
+    #section5 > div{
+        width: 97%;
     }
     footer{
         flex-direction: column;
@@ -500,9 +621,9 @@ footer {
         font-size: 6vw;
     }
     .namer{
-        font-size: x-large;
+        font-size: xx-large;
     }
-    .section1 img{
+    #section1 img{
         width: 95%;
     }
     .right1{

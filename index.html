@@ -4,67 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My-Portfolio</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <header>
-        <nav id="navbar">
-            <div class="navh"><div>My Portfolio Website</div></div>
-            <div class="navel">
-                <ul>
-                    <li class="navli"><a href="">Home</a></li>
-                    <li class="navli"><a href="#about-me">About</a></li>
-                    <li class="navli"><a href="#my-service">Services</a></li>
-                    <li class="navli"><a href="#projects">Projects</a></li>
-                    <li class="navli"><a href="">Contact</a></li>
-                </ul>
-                <i class="fa-solid fa-bars fa-lg" id="nav-button"></i>   
-                <div class="card-overlay" id="card-overlay">
-                    <div class="card">
-                        <div class="close-button"><i class="fa-solid fa-xmark fa-lg close-card" style="font-size: 1.5em; cursor: pointer;"></i></div>
-                        <div class="card-items">
-                            <a href="" class="close-card">Home</a><hr>
-                            <a href="#about-me" class="close-card">About</a><hr>
-                            <a href="#my-service" class="close-card">Services</a><hr>
-                            <a href="#projects" class="close-card">Projects</a><hr>
-                            <a href="" class="close-card">Contact</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main style="margin-top: 9vh;">
-        <section class="section1">
-            <div class="left1">
+    <nav id="navbar">
+        <div class="navh">
+            <div>My Portfolio Website</div>
+        </div>
+        <div class="navel">
+            <ul id="navul">
+                <li class="navli"><i class="fa-solid fa-xmark fa-lg close-card" id="navbtn1"></i></li>  
+                <li class="navli"><a href="#section1">Home</a></li>
+                <li class="navli"><a href="#About">About</a></li>
+                <li class="navli"><a href="#my-service">Services</a></li>
+                <li class="navli"><a href="#projects">Projects</a></li>
+                <li class="navli"><a href="#Contact">Contact</a></li>
+            </ul>
+            <div id="navul2"><i class="fa-solid fa-bars fa-lg" id="navbtn2"></i></div>
+        </div>
+    </nav>
+    <main style="margin-top: 8vh;">
+        <!-- Section-1 -->
+        <section id="section1">
+            <div class="center1">
                 <div class="namer">
-                Hi, My name is <span style="color: rgb(158, 76, 236);">Mayank</span>
-                <div>and I am a passionate</div>
-                <span id="element"></span>
+                    Hi, My name is <span style="color: rgb(158, 76, 236);">Mayank</span>
+                    <div>and I am a passionate</div>
+                    <span id="element"></span>
                 </div>
                 <div class="btns">
-                    <a href="/Docs/Resume.pdf" download="Mayank's Resume.pdf" class="btn0 btn1">Download Resume</a>
-                    <a href="https://github.com/Mayankdaiya" class="btn0 btn2" target="_blank">View Github</a>
+                    <a href="/Docs/Resume.pdf" download="Mayank's Resume.pdf"><button class="btn0 btn1">Download
+                            Resume</button></a>
+                    <a href="https://github.com/Mayankdaiya" target="_blank"><button class="btn0 btn2">View
+                            Github</button></a>
                 </div>
-            </div>
-            <div class="right1">
-                <img src="https://www.dreampirates.in/images/img/23-04-2019-7922-animal-animal-photography-canidae-45242.jpg" alt="Reload Failed">
             </div>
         </section>
         <!-- Section-2 -->
-        <hr id="about-me">
+        <!-- <hr id="about-me"> -->
+        <hr id="About">
         <h1 class="heading">About Me</h1>
-        <section class="section2">
+        <section id="section2">
             <div class="left2">
                 <img src="Images/MD.jpg" alt="">
             </div>
             <div class="right2">
-                <div class="aboutyou">Hello, I am Mayank kumar dahiya, a B.tech Computer Science student at GLA University. I am deeply passionate about technology and have honed my skills in programming, web development, and machine learning. With a strong foundation in computer science, I have embarked on an exciting journey of learning and creating.</div>
+                <div class="aboutyou">Hello, I am Mayank kumar dahiya, a B.tech Computer Science student at GLA
+                    University. I am deeply passionate about technology and have honed my skills in programming, web
+                    development, and machine learning. With a strong foundation in computer science, I have embarked on
+                    an exciting journey of learning and creating.</div>
                 <div class="tab-titles">
                     <span class="tabs" id="a1" onclick="">Education</span>
                     <span class="tabs" id="a2">Skills</span>
@@ -82,7 +76,8 @@
                 <div class="tab-content" id="tc2">
                     <ul class="tab-card">
                         <li>Programming Languages</li>
-                        <p>Java, Python, C and basics of C++. Also have descent knowledge of Data Structures and Algorithms</p>
+                        <p>Java, Python, C and basics of C++. Also have descent knowledge of Data Structures and
+                            Algorithms</p>
                         <li>Machine Learning</li>
                         <p>I have a foundational understanding of machine learning and AI concepts</p>
                         <li>Web Development</li>
@@ -92,31 +87,78 @@
             </div>
         </section>
         <hr id="my-service">
-        <h1 class="heading">My Services</h1> 
+        <h1 class="heading">My Services</h1>
         <section>
-            <div class="section3">
+            <div id="section3">
                 <div class="cards">
                     <h1>Programmer</h1>
-                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a versatile framework for building hybrid apps.</div>
+                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile
+                        applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a
+                        versatile framework for building hybrid apps.</div>
                 </div>
                 <div class="cards">
                     <h1>Web Developer</h1>
-                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a versatile framework for building hybrid apps.</div>
+                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile
+                        applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a
+                        versatile framework for building hybrid apps.</div>
                 </div>
                 <div class="cards">
                     <h1>App Developer</h1>
-                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a versatile framework for building hybrid apps.</div>
+                    <div class="card-content">I'm passionate about creating innovative and user-friendly mobile
+                        applications. As an aspiring app developer, I've completed a comprehensive course in Flutter, a
+                        versatile framework for building hybrid apps.</div>
                 </div>
             </div>
         </section>
         <hr id="projects">
         <h1 class="heading">My Projects</h1>
-        <section>
+        <section id="section3">
+            <div class="projects">
+                <img src="Images/vehicles.jpg">
+                <div class="content">
+                    <h3>Autonomous Vehicle Detection</h3>
+                    <!-- content -->
+                    <a href="" target="_blank"><iconify-icon icon="tabler:external-link"  width="44" height="44"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="Images/potatoPlant.webp">
+                <div class="content">
+                    <h3>Potato Disease Classification</h3>
+                    <!-- content -->
+                    <a href="https://github.com/Mayankdaiya/Potato-Disease-Classification-Using-CNN" target="_blank"><iconify-icon icon="tabler:external-link"  width="44" height="44"></iconify-icon></a>
+                </div>
+            </div>
+            <div class="projects">
+                <img src="Images/kanban.jpg">
+                <div class="content">
+                    <h3>Kanban Board</h3>
+                    <!-- content -->
+                    <a href="https://mayankdaiya.github.io/kanban_board/" target="_blank"><iconify-icon icon="tabler:external-link"  width="44" height="44"></iconify-icon></a>
+                </div>
+            </div>
+        </section>
+        <hr id="Contact">
+        <h1 class="heading">Contact Me</h1>
+        <section id="section5">
             <div>
-
+                <div class="left5">
+                    <div>
+                        <h2>Let's Connect</h2>
+                    </div>
+                    <div><span>Get in touch! Whether it's collaboration opportunities, inquiries, or just to say hello,
+                            I'm here and ready to connect. Drop me a message using the form below or reach out via email
+                            or phone. Looking forward to hearing from you!</span></div>
+                </div>
             </div>
             <div>
-
+                <form class="right5" name='submit-to-google-sheet'>
+                    <input type="text" name="Name" id="" placeholder="Your Name" required>
+                    <input type="email" name="Email" id="" placeholder="Your Email" required>
+                    <textarea name="Message" id="" rows="6" placeholder="Enter you message here!" required></textarea>
+                    <span id="msg"></span>
+                    <button>Submit</button>
+                </form>
             </div>
         </section>
         <hr>
@@ -125,33 +167,53 @@
     <footer>
         <div class="f-tabs">
             <div class="f-tabs1">
-            <span class="tabhead">Mayank Kumar Dahiya</span>
+                <span class="tabhead">Mayank Kumar Dahiya</span>
             </div>
-            <div class="f-tabs1">
-            <i class="fa-solid fa-phone"></i>
-            <span class="f-text"><a href="tel:+919728297342">+91-9728297342</a></span>
+            <div class="f-tabs0">
+                <i class="fa-solid fa-phone"></i>
+                <span class="f-text"><a href="tel:+919728297342"> +91-9728297342</a></span>
             </div>
-            <div class="f-tabs1">
-            <i class="fa-regular fa-envelope"></i>
-            <span class="f-text"><a href="mailto:mayankdaiya03@gmail.com">mayankdaiya03@gmail.com</a><span>
+            <div class="f-tabs0">
+                <i class="fa-regular fa-envelope"></i>
+                <span class="f-text"><a href="mailto:mayankdaiya03@gmail.   com">mayankdaiya03@gmail.com</a><span>
             </div>
         </div>
         <div class="f-tabs">
-            <div class="f-tabs3">
+            <div class="f-tabs1">
                 <span class="tabhead">My Coding Platforms</span>
-                <div><a href="https://leetcode.com/mayankdaiya03/" target="_blank"><iconify-icon icon="simple-icons:leetcode"></iconify-icon>Leetcode</a>
-                <a href="https://www.hackerrank.com/profile/mayank_dahiya_a2" target="_blank"><i class="fa-brands fa-hackerrank"></i>Hackerrank</a></div>
-                <div><a href="https://www.codechef.com/users/mayankdaiya_cs" target="_blank"><iconify-icon icon="simple-icons:codechef"></iconify-icon>Codechef</a>
-                <a href="https://www.codechef.com/users/mayankdaiya_cs" target="_blank"><iconify-icon icon="simple-icons:codeforces"></iconify-icon>Codeforces</a></div>
+            </div>
+            <div class="centertab">
+                <div class="f-tabs1">
+                    <a href="https://leetcode.com/mayankdaiya03/" target="_blank"><iconify-icon
+                            icon="simple-icons:leetcode"></iconify-icon>Leetcode</a>
+                    <a href="https://www.hackerrank.com/profile/mayank_dahiya_a2" target="_blank"><i
+                            class="fa-brands fa-hackerrank"></i>Hackerrank</a>
+                </div>
+                <div class="f-tabs1">
+                    <a href="https://www.codechef.com/users/mayankdaiya_cs" target="_blank"><iconify-icon
+                            icon="simple-icons:codechef"></iconify-icon>Codechef<a>
+                            <a href="https://codeforces.com/profile/mayankdaiya_03" target="_blank"><iconify-icon
+                                    icon="simple-icons:codeforces"></iconify-icon>Codeforces</a>
+                </div>
             </div>
         </div>
         <div class="f-tabs">
-            <div class="f-tabs3">
+            <div class="f-tabs1">
                 <span class="tabhead">My Social Platforms</span>
-                <div><a href="https://www.linkedin.com/in/mayankdaiya03/" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
-                <a href="https://github.com/Mayankdaiya" target="_blank"><i class="fa-brands fa-github"></i>Github</a></div>
-                <div><a href="https://www.instagram.com/mayank_daiya__03/" target="_blank"><i class="fa-brands fa-instagram"></i>Instagram</a>
-                <a href="https://www.facebook.com/Mayankdaiya0000" target="_blank"><i class="fa-brands fa-facebook"></i>facebook</a></div>
+            </div>
+            <div class="centertab">
+                <div class="f-tabs1">
+                    <a href="https://www.linkedin.com/in/mayankdaiya03/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i>Linkedin</a>
+                    <a href="https://github.com/Mayankdaiya" target="_blank"><i
+                            class="fa-brands fa-github"></i>Github</a>
+                </div>
+                <div class="f-tabs1">
+                    <a href="https://www.instagram.com/mayank_daiya__03/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i>Instagram</a>
+                    <a href="https://www.facebook.com/Mayankdaiya0000" target="_blank"><i
+                            class="fa-brands fa-facebook"></i>facebook</a>
+                </div>
             </div>
         </div>
     </footer>
@@ -159,26 +221,22 @@
     <div class="last">
         <div style="padding-left: 10px;">
             <i class="fa-sharp fa-regular fa-copyright"></i>
-            <span>2023 Mayank Kummar Dahiya.</span></div>
+            <span>2023 Mayank Kummar Dahiya.</span>
+        </div>
         <div>
             <i class="fa-sharp fa-solid fa-pen"></i>
             <span style="margin-right: 10px;">Designed using Javascript.</span>
         </div>
     </div>
-    
 
+    <!-- TypingWords in section-1 -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-          strings: ['Web Developer.','Problem Solver.','Programmer.'],
-          typeSpeed: 80,
-        });
-    </script>
     <script src="script.js"></script>
     <!-- Icons from fontawesome site -->
     <script src="https://kit.fontawesome.com/f3e2d2c5bd.js" crossorigin="anonymous"></script>
     <!-- for coding icons -- https://icon-sets.iconify.design/simple-icons/ -->
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- from -- https://github.com/jamiewilson/form-to-google-sheets -->
 </body>
 
 </html>
